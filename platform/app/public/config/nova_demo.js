@@ -13,6 +13,10 @@ window.config = {
   showLoadingIndicator: true,
   strictZSpacingForVolumeViewport: true,
   groupEnabledModesFirst: true,
+  investigationalUseDialog: {
+    option: 'never',
+  },
+  autoPlayCine: true,
   maxNumRequests: {
     interaction: 300,
     thumbnail: 150,
