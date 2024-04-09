@@ -56,6 +56,7 @@ RUN yarn install --frozen-lockfile --verbose
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 ENV QUICK_BUILD true
 # ENV GENERATE_SOURCEMAP=false
+ENV PUBLIC_URL=/v3/
 ENV APP_CONFIG=config/nova_demo.js
 
 RUN yarn run build

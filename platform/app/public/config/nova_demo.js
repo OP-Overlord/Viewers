@@ -1,12 +1,18 @@
 window.config = {
-  routerBasename: '/',
-  // whiteLabeling: {},
+  routerBasename: '/v3',
+
+  customizationService: {
+    dicomUploadComponent:
+      '@ohif/extension-cornerstone.customizationModule.cornerstoneDicomUploadComponent',
+  },
+
   extensions: [],
   modes: [],
-  customizationService: {},
+  studyListFunctionsEnabled: true,
+
   showStudyList: true,
   // some windows systems have issues with more than 3 web workers
-  maxNumberOfWebWorkers: 3,
+  maxNumberOfWebWorkers: 4,
   // below flag is for performance reasons, but it might not work for all servers
   showWarningMessageForCrossOrigin: false,
   showCPUFallbackMessage: false,
@@ -26,16 +32,7 @@ window.config = {
   },
   // filterQueryParam: false,
   defaultDataSourceName: 'nova',
-  /* Dynamic config allows user to pass "configUrl" query string this allows to load config without recompiling application. The regex will ensure valid configuration source */
-  // dangerouslyUseDynamicConfig: {
-  //   enabled: true,
-  //   // regex will ensure valid configuration source and default is /.*/ which matches any character. To use this, setup your own regex to choose a specific source of configuration only.
-  //   // Example 1, to allow numbers and letters in an absolute or sub-path only.
-  //   // regex: /(0-9A-Za-z.]+)(\/[0-9A-Za-z.]+)*/
-  //   // Example 2, to restricts to either hosptial.com or othersite.com.
-  //   // regex: /(https:\/\/hospital.com(\/[0-9A-Za-z.]+)*)|(https:\/\/othersite.com(\/[0-9A-Za-z.]+)*)/
-  //   regex: /.*/,
-  // },
+
   dataSources: [
     {
       namespace: '@ohif/extension-default.dataSourcesModule.dicomweb',
@@ -53,7 +50,7 @@ window.config = {
         supportsFuzzyMatching: true,
         supportsWildcard: true,
         staticWado: true,
-        singlepart: 'bulkdata,video',
+        singlepart: 'pdf,video',
         // whether the data source should use retrieveBulkData to grab metadata,
         // and in case of relative path, what would it be relative to, options
         // are in the series level or study level (some servers like series some study)
@@ -61,15 +58,9 @@ window.config = {
           enabled: true,
           relativeResolution: 'studies',
         },
-        acceptHeader: ['multipart/related; type=image/jls; q=1', 'multipart/related; type=application/octet-stream; q=0.5'],
+        dicomUploadEnabled: true,
+        acceptHeader: ['multipart/related; type=application/pdf; q=0.6','multipart/related; type=image/jls; q=1','multipart/related; type=application/octet-stream; q=0.5'],
         omitQuotationForMultipartRequest: false,
-      },
-    },
-    {
-      namespace: '@ohif/extension-default.dataSourcesModule.dicomlocal',
-      sourceName: 'dicomlocal',
-      configuration: {
-        friendlyName: 'dicom local',
       },
     },
   ],
