@@ -47,7 +47,7 @@ function DicomUpload({ dataSource, onComplete, onStarted }: DicomUploadProps): R
                       disabled={false}
                       onClick={() => {}}
                     >
-                      {'Add files'}
+                      {'Subir archivos'}
                       <input {...getInputProps()} />
                     </Button>
                   </div>
@@ -64,7 +64,7 @@ function DicomUpload({ dataSource, onComplete, onStarted }: DicomUploadProps): R
                       disabled={false}
                       onClick={() => {}}
                     >
-                      {'Add folder'}
+                      {'Subir carpeta'}
                       <input
                         {...getInputProps()}
                         webkitdirectory="true"
@@ -75,8 +75,8 @@ function DicomUpload({ dataSource, onComplete, onStarted }: DicomUploadProps): R
                 )}
               </Dropzone>
             </div>
-            <div className="pt-5">or drag images or folders here</div>
-            <div className="text-aqua-pale pt-3 text-lg">(DICOM files supported)</div>
+            <div className="pt-5">o arrastre y suelte los archivos o carpetas aquí</div>
+            <div className="text-aqua-pale pt-3 text-lg">(archivos DICOM soportados)</div>
           </div>
         )}
       </Dropzone>
