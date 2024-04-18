@@ -9,7 +9,7 @@ window.config = {
   extensions: [],
   modes: [],
   studyListFunctionsEnabled: true,
-
+  showPatientInfo: 'visible',
   showStudyList: true,
   // some windows systems have issues with more than 3 web workers
   maxNumberOfWebWorkers: 4,

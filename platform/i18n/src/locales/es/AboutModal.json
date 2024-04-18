@@ -1,14 +1,18 @@
 {
   "About OHIF Viewer": "Acerca de NOVA Viewer",
   "Browser": "Navegador",
-  "Build number": "",
+  "Build number": "Número de versión",
+  "Commit hash": "",
+  "Data citation": "",
+  "Important links": "",
   "Last master commits": "",
-  "More details": "Más detalles",
+  "More details": "ver más",
   "Name": "Nombre",
-  "OS": "SO",
+  "OS": "Sistema Operativo",
   "Report an issue": "",
   "Repository URL": "",
-  "Value": "Valor",
-  "Version information": "Información de la versión",
+  "Value": "Value",
+  "Version information": "",
+  "Version number": "Versión",
   "Visit the forum": ""
 }
