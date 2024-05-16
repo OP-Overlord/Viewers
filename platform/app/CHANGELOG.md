@@ -3,7 +3,93 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<<<<<<< HEAD
 # [3.8.0](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.93...v3.8.0) (2024-04-29)
+=======
+# [3.9.0-beta.8](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.7...v3.9.0-beta.8) (2024-05-16)
+
+**Note:** Version bump only for package @ohif/app
+
+
+
+
+
+# [3.9.0-beta.7](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.6...v3.9.0-beta.7) (2024-05-15)
+
+**Note:** Version bump only for package @ohif/app
+
+
+
+
+
+# [3.9.0-beta.6](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.5...v3.9.0-beta.6) (2024-05-15)
+
+**Note:** Version bump only for package @ohif/app
+
+
+
+
+
+# [3.9.0-beta.5](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.4...v3.9.0-beta.5) (2024-05-14)
+
+**Note:** Version bump only for package @ohif/app
+
+
+
+
+
+# [3.9.0-beta.4](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.3...v3.9.0-beta.4) (2024-05-14)
+
+
+### Bug Fixes
+
+* **auth:** bind handleUnauthenticated to correct context ([#4120](https://github.com/OHIF/Viewers/issues/4120)) ([8fa339f](https://github.com/OHIF/Viewers/commit/8fa339f296fd7e844f3879cfd81e47dbff315e66))
+* **DicomJSONDataSource:** Fix series filtering ([#4092](https://github.com/OHIF/Viewers/issues/4092)) ([2de102c](https://github.com/OHIF/Viewers/commit/2de102c73c795cfb48b49005b10aa788444a45b7))
+
+
+
+
+
+# [3.9.0-beta.3](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.2...v3.9.0-beta.3) (2024-05-08)
+
+
+### Features
+
+* **typings:** Enhance typing support with withAppTypes and custom services throughout OHIF ([#4090](https://github.com/OHIF/Viewers/issues/4090)) ([374065b](https://github.com/OHIF/Viewers/commit/374065bc3bad9d212f9817a8d41546cc64cfabfb))
+
+
+
+
+
+# [3.9.0-beta.2](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.1...v3.9.0-beta.2) (2024-05-06)
+
+**Note:** Version bump only for package @ohif/app
+
+
+
+
+
+# [3.9.0-beta.1](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.0...v3.9.0-beta.1) (2024-05-06)
+
+
+### Bug Fixes
+
+* **rt:** enhanced RT support, utilize SVGs for rendering. ([#4074](https://github.com/OHIF/Viewers/issues/4074)) ([0156bc4](https://github.com/OHIF/Viewers/commit/0156bc426f1840ae0d090223e94a643726e856cb))
+
+
+
+
+
+# [3.9.0-beta.0](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.94...v3.9.0-beta.0) (2024-04-29)
+
+**Note:** Version bump only for package @ohif/app
+
+
+
+
+
+# [3.8.0-beta.94](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.93...v3.8.0-beta.94) (2024-04-29)
+>>>>>>> 0d81ecf16630333479bc17c4f6d7837e5c8c1f8b
 
 **Note:** Version bump only for package @ohif/app
 

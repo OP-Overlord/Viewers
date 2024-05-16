@@ -54,7 +54,7 @@ provided by the <a href="https://ohif.org/">Open Health Imaging Foundation (OHIF
 
 ## About
 
-The OHIF Medical Imaging Viewer is for viewing medical images. It can retrieve
+The OHIF Viewer can retrieve
 and load images from most sources and formats; render sets in 2D, 3D, and
 reconstructed representations; allows for the manipulation, annotation, and
 serialization of observations; supports internationalization, OpenID Connect,
@@ -140,7 +140,7 @@ Here is a schematic representation of our development workflow:
 ### Requirements
 
 - [Yarn 1.17.3+](https://yarnpkg.com/en/docs/install)
-- [Node 16+](https://nodejs.org/en/)
+- [Node 18+](https://nodejs.org/en/)
 - Yarn Workspaces should be enabled on your machine:
   - `yarn config set workspaces-experimental true`
 

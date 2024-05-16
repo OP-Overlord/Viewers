@@ -1,6 +1,10 @@
 {
   "name": "@ohif/mode-preclinical-4d",
+<<<<<<< HEAD
   "version": "3.8.0",
+=======
+  "version": "3.9.0-beta.8",
+>>>>>>> 0d81ecf16630333479bc17c4f6d7837e5c8c1f8b
   "description": "4D Workflow",
   "author": "OHIF",
   "license": "MIT",
@@ -30,12 +34,21 @@
     "test:unit:ci": "jest --ci --runInBand --collectCoverage --passWithNoTests"
   },
   "peerDependencies": {
+<<<<<<< HEAD
     "@ohif/core": "3.8.0",
     "@ohif/extension-cornerstone": "3.8.0",
     "@ohif/extension-cornerstone-dicom-seg": "3.8.0",
     "@ohif/extension-cornerstone-dynamic-volume": "3.8.0",
     "@ohif/extension-default": "3.8.0",
     "@ohif/extension-tmtv": "3.8.0"
+=======
+    "@ohif/core": "3.9.0-beta.8",
+    "@ohif/extension-cornerstone": "3.9.0-beta.8",
+    "@ohif/extension-cornerstone-dicom-seg": "3.9.0-beta.8",
+    "@ohif/extension-cornerstone-dynamic-volume": "3.9.0-beta.8",
+    "@ohif/extension-default": "3.9.0-beta.8",
+    "@ohif/extension-tmtv": "3.9.0-beta.8"
+>>>>>>> 0d81ecf16630333479bc17c4f6d7837e5c8c1f8b
   },
   "dependencies": {
     "@babel/runtime": "^7.20.13"

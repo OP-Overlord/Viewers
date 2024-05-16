@@ -3,7 +3,83 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<<<<<<< HEAD
 # [3.8.0](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.93...v3.8.0) (2024-04-29)
+=======
+# [3.9.0-beta.8](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.7...v3.9.0-beta.8) (2024-05-16)
+
+**Note:** Version bump only for package @ohif/extension-dicom-pdf
+
+
+
+
+
+# [3.9.0-beta.7](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.6...v3.9.0-beta.7) (2024-05-15)
+
+**Note:** Version bump only for package @ohif/extension-dicom-pdf
+
+
+
+
+
+# [3.9.0-beta.6](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.5...v3.9.0-beta.6) (2024-05-15)
+
+**Note:** Version bump only for package @ohif/extension-dicom-pdf
+
+
+
+
+
+# [3.9.0-beta.5](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.4...v3.9.0-beta.5) (2024-05-14)
+
+**Note:** Version bump only for package @ohif/extension-dicom-pdf
+
+
+
+
+
+# [3.9.0-beta.4](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.3...v3.9.0-beta.4) (2024-05-14)
+
+**Note:** Version bump only for package @ohif/extension-dicom-pdf
+
+
+
+
+
+# [3.9.0-beta.3](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.2...v3.9.0-beta.3) (2024-05-08)
+
+**Note:** Version bump only for package @ohif/extension-dicom-pdf
+
+
+
+
+
+# [3.9.0-beta.2](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.1...v3.9.0-beta.2) (2024-05-06)
+
+**Note:** Version bump only for package @ohif/extension-dicom-pdf
+
+
+
+
+
+# [3.9.0-beta.1](https://github.com/OHIF/Viewers/compare/v3.9.0-beta.0...v3.9.0-beta.1) (2024-05-06)
+
+**Note:** Version bump only for package @ohif/extension-dicom-pdf
+
+
+
+
+
+# [3.9.0-beta.0](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.94...v3.9.0-beta.0) (2024-04-29)
+
+**Note:** Version bump only for package @ohif/extension-dicom-pdf
+
+
+
+
+
+# [3.8.0-beta.94](https://github.com/OHIF/Viewers/compare/v3.8.0-beta.93...v3.8.0-beta.94) (2024-04-29)
+>>>>>>> 0d81ecf16630333479bc17c4f6d7837e5c8c1f8b
 
 **Note:** Version bump only for package @ohif/extension-dicom-pdf
 
