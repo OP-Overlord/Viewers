@@ -1,10 +1,8 @@
 // TODO: torn, can either bake this here; or have to create a whole new button type
 // Only ways that you can pass in a custom React component for render :l
-import { WindowLevelMenuItem } from '@ohif/ui';
-import { defaults, ToolbarService } from '@ohif/core';
+import { ToolbarService } from '@ohif/core';
 import type { Button } from '@ohif/core/types';
 
-const { windowLevelPresets } = defaults;
 const { createButton } = ToolbarService;
 
 export const setToolActiveToolbar = {
@@ -68,6 +66,14 @@ const toolbarButtons: Button[] = [
           evaluate: 'evaluate.cornerstoneTool',
         }),
         createButton({
+          id: 'RectangleROI',
+          icon: 'tool-rectangle',
+          label: 'Rectangle',
+          tooltip: 'Rectangle ROI',
+          commands: setToolActiveToolbar,
+          evaluate: 'evaluate.cornerstoneTool',
+        }),
+        createButton({
           id: 'CircleROI',
           icon: 'tool-circle',
           label: 'Circle',
@@ -76,10 +82,27 @@ const toolbarButtons: Button[] = [
           evaluate: 'evaluate.cornerstoneTool',
         }),
         createButton({
-          id: 'CobbAngle',
-          icon: 'tool-circle',
-          label: 'Angulo de Cobb',
-          tooltip: 'Cobb Tool',
+          id: 'PlanarFreehandROI',
+          icon: 'icon-tool-freehand-roi',
+          label: 'Freehand ROI',
+          tooltip: 'Freehand ROI',
+          commands: setToolActiveToolbar,
+          evaluate: 'evaluate.cornerstoneTool',
+        }),
+        createButton({
+          id: 'SplineROI',
+          icon: 'icon-tool-spline-roi',
+          label: 'Spline ROI',
+          tooltip: 'Spline ROI',
+          commands: setToolActiveToolbar,
+          evaluate: 'evaluate.cornerstoneTool',
+        }),
+        createButton({
+          id: 'LivewireContour',
+          icon: 'icon-tool-livewire',
+          label: 'Livewire tool',
+          tooltip: 'Livewire tool',
+>>>>>>> 60d68e341010962ed3d3806d40ca0e877ed75473
           commands: setToolActiveToolbar,
           evaluate: 'evaluate.cornerstoneTool',
         }),
