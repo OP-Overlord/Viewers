@@ -102,7 +102,6 @@ const toolbarButtons: Button[] = [
           icon: 'icon-tool-livewire',
           label: 'Livewire tool',
           tooltip: 'Livewire tool',
->>>>>>> 60d68e341010962ed3d3806d40ca0e877ed75473
           commands: setToolActiveToolbar,
           evaluate: 'evaluate.cornerstoneTool',
         }),
