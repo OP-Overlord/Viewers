@@ -42,6 +42,14 @@ const toolbarButtons: Button[] = [
           evaluate: 'evaluate.cornerstoneTool',
         }),
         createButton({
+          id: 'CobbAngle',
+          icon: 'tool-angle',
+          label: 'Angulo de Cobb',
+          tooltip: 'Cobb Angle',
+          commands: setToolActiveToolbar,
+          evaluate: ['evaluate.cornerstoneTool'],
+        }),
+        createButton({
           id: 'Bidirectional',
           icon: 'tool-bidirectional',
           label: 'Bidirectional',
@@ -84,7 +92,7 @@ const toolbarButtons: Button[] = [
         createButton({
           id: 'PlanarFreehandROI',
           icon: 'icon-tool-freehand-roi',
-          label: 'Freehand ROI',
+          label: 'ROI de trazo libre',
           tooltip: 'Freehand ROI',
           commands: setToolActiveToolbar,
           evaluate: 'evaluate.cornerstoneTool',
@@ -92,7 +100,7 @@ const toolbarButtons: Button[] = [
         createButton({
           id: 'SplineROI',
           icon: 'icon-tool-spline-roi',
-          label: 'Spline ROI',
+          label: 'ROI de linea continua',
           tooltip: 'Spline ROI',
           commands: setToolActiveToolbar,
           evaluate: 'evaluate.cornerstoneTool',
@@ -100,7 +108,7 @@ const toolbarButtons: Button[] = [
         createButton({
           id: 'LivewireContour',
           icon: 'icon-tool-livewire',
-          label: 'Livewire tool',
+          label: 'ROI de trazo magnético',
           tooltip: 'Livewire tool',
           commands: setToolActiveToolbar,
           evaluate: 'evaluate.cornerstoneTool',

@@ -136,14 +136,6 @@ const moreTools = [
           evaluate: 'evaluate.cornerstoneTool',
         }),
         createButton({
-          id: 'CobbAngle',
-          icon: 'tool-angle',
-          label: 'Cobb Angle',
-          tooltip: 'Cobb Angle',
-          commands: setToolActiveToolbar,
-          evaluate: 'evaluate.cornerstoneTool',
-        }),
-        createButton({
           id: 'Magnify',
           icon: 'tool-magnify',
           label: 'Zoom-in',
