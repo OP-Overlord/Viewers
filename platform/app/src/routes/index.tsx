@@ -34,14 +34,7 @@ const NotFoundStudy = () => {
     <div className="absolute flex h-full w-full items-center justify-center text-white">
       <div>
         <h4>
-          One or more of the requested studies are not available at this time. Return to the{' '}
-          <Link
-            className="text-primary-light"
-            to={'/'}
-          >
-            study list
-          </Link>{' '}
-          to select a different study to view.
+          El recurso solicitado no se encuentra disponible.
         </h4>
       </div>
     </div>
