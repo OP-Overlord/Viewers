@@ -8,11 +8,13 @@ window.config = {
 
   extensions: [],
   modes: [],
+  disableConfirmationPrompts: true,
+  useSharedArrayBuffer: 'AUTO',
   studyListFunctionsEnabled: true,
   showPatientInfo: 'visible',
   showStudyList: true,
   // some windows systems have issues with more than 3 web workers
-  maxNumberOfWebWorkers: 4,
+  maxNumberOfWebWorkers: 3,
   // below flag is for performance reasons, but it might not work for all servers
   showWarningMessageForCrossOrigin: false,
   showCPUFallbackMessage: false,
@@ -50,14 +52,14 @@ window.config = {
         supportsFuzzyMatching: true,
         supportsWildcard: true,
         staticWado: true,
-        singlepart: 'pdf,video',
+        singlepart: 'pdf,video,bulkdata',
         // whether the data source should use retrieveBulkData to grab metadata,
         // and in case of relative path, what would it be relative to, options
         // are in the series level or study level (some servers like series some study)
-        bulkDataURI: {
-          enabled: true,
-          relativeResolution: 'studies',
-        },
+        //bulkDataURI: {
+        //  enabled: true,
+        //  relativeResolution: 'studies',
+        //},
         dicomUploadEnabled: true,
         acceptHeader: ['multipart/related; type=application/pdf; q=0.6','multipart/related; type=image/jls; q=1','multipart/related; type=application/octet-stream; q=0.5'],
         omitQuotationForMultipartRequest: false,

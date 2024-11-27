@@ -101,10 +101,20 @@ const createRoutes = ({
     props: { children: WorkList, servicesManager, extensionManager },
   };
 
+  const { component: dicomUploadComponent } = customizationService.get('dicomUploadComponent')
+
+  const DicomUpload = {
+    path: '/dicomupload',
+    private: false,
+    children: DataSourceWrapper,
+    props: { children: dicomUploadComponent, dataSources},
+  };
+
   const customRoutes = customizationService.getGlobalCustomization('customRoutes');
   const allRoutes = [
     ...routes,
     ...(showStudyList ? [WorkListRoute] : []),
+    ...[DicomUpload],
     ...(customRoutes?.routes || []),
     ...bakedInRoutes,
     customRoutes?.notFoundRoute || notFoundRoute,

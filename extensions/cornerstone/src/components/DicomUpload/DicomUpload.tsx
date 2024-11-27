@@ -11,15 +11,13 @@ import './DicomUpload.css';
 type DicomUploadProps = {
   dataSource;
   onComplete: () => void;
-  onStarted: () => void;
 };
 
-function DicomUpload({ dataSource, onComplete, onStarted }: DicomUploadProps): ReactElement {
+function DicomUpload({ dataSource, onComplete}: DicomUploadProps): ReactElement {
   const baseClassNames = 'min-h-[480px] flex flex-col bg-black select-none';
   const [dicomFileUploaderArr, setDicomFileUploaderArr] = useState([]);
 
   const onDrop = useCallback(async acceptedFiles => {
-    onStarted();
     setDicomFileUploaderArr(acceptedFiles.map(file => new DicomFileUploader(file, dataSource)));
   }, []);
 
@@ -44,6 +42,7 @@ function DicomUpload({ dataSource, onComplete, onStarted }: DicomUploadProps): R
                 {({ getRootProps, getInputProps }) => (
                   <div {...getRootProps()}>
                     <Button
+                      type={ButtonEnums.type.secondary}
                       disabled={false}
                       onClick={() => {}}
                     >
@@ -89,7 +88,6 @@ function DicomUpload({ dataSource, onComplete, onStarted }: DicomUploadProps): R
         <div className={classNames('h-[calc(100vh-300px)]', baseClassNames)}>
           <DicomUploadProgress
             dicomFileUploaderArr={Array.from(dicomFileUploaderArr)}
-            onComplete={onComplete}
           />
         </div>
       ) : (
@@ -102,7 +100,6 @@ function DicomUpload({ dataSource, onComplete, onStarted }: DicomUploadProps): R
 DicomUpload.propTypes = {
   dataSource: PropTypes.object.isRequired,
   onComplete: PropTypes.func.isRequired,
-  onStarted: PropTypes.func.isRequired,
 };
 
 export default DicomUpload;
